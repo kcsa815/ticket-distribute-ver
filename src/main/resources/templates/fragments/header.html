@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko" xmlns:th="http://www.thymeleaf.org">
+<body>
+
+    <header th:fragment="header">
+
+        <div class="header-top-bar">
+            <div class="container">
+                
+                <div class="header-top-left">
+                    <div class="logo">
+                        <a th:href="@{/}">^^ㅣck뮤</a>
+                    </div>
+                    <div class="search-container">
+                        <form th:action="@{/search}" method="get">
+                            <input type="text" name="query" placeholder="공연, 배우를 검색하세요">
+                            <button type="submit"><i class="fi fi-rr-search"></i></button>
+                        </form>
+                    </div>
+                </div>
+
+                <nav class="first-header">
+                    <ul>
+                        <li><a href="/members/login" th:href="@{/members/login}"><i class="fi fi-rr-user"></i> 로그인</a></li>
+                        <li><a th:href="@{/my-reservation}"><i class="fi fi-rr-ticket"></i>내 예약</a></li>
+                    </ul>
+                </nav>
+
+            </div>
+        </div>
+
+        <nav class="second-header">
+            <div class="container">
+                <ul>
+                    <li><a th:href="@{/musical-list}">뮤지컬</a></li>
+                    <li><a th:href="@{/rankings}">랭킹</a></li>
+                    <li><a th:href="@{/coming-soon}">오픈 예정</a></li>
+                    <li><a th:href="@{/local}">지역별</a></li>
+                    <li><a th:href="@{/venues}">공연장</a></li>
+                </ul>
+            </div>
+        </nav>
+
+    </header>
+
+</body>
+</html>
