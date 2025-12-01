@@ -1,20 +1,19 @@
 import React from "react";
 import ReactDOM from 'react-dom/client'
-import { BrowserRouter } from "react-router-dom"; 
+import { HashRouter } from "react-router-dom"; 
 import App from "./App";
-import './index.css'     //있어도 되고 없어도 됨
+import './index.css'
 import { AuthProvider } from "./context/AuthContext";
 import Modal from 'react-modal';
-import './index.css';
 
-Modal.setAppElement('#root');   //모달이 앱의 루트 요소를 알도록 설정
+Modal.setAppElement('#root');
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
     <AuthProvider>
-      <BrowserRouter basename="/ticket-distribute-ver">
+      <HashRouter>
         <App />
-      </BrowserRouter>
+      </HashRouter>
     </AuthProvider>
   </React.StrictMode>,
 )
