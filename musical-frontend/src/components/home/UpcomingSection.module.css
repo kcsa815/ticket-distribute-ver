@@ -1,0 +1,89 @@
+.section {
+  width: 100%;
+  margin-top: 90px;
+}
+
+.section h2 {
+  text-align: center;
+  font-size: 30px;
+  font-weight: 700;
+  margin-bottom: 25px;
+}
+
+/* 2열 × 3행 */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+/* 카드 전체 */
+.card {
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+  border-radius: 14px;
+  box-shadow: rgba(0,0,0,0.05) 0px 2px 8px;
+  transition: transform 0.25s ease, box-shadow 0.2s ease;
+  align-items: center;
+  text-decoration: none;
+  color: inherit;
+}
+
+/* hover */
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: rgba(0,0,0,0.12) 0px 6px 16px;
+}
+
+/* 포스터 정렬 */
+.poster {
+  width: 140px;
+  height: 180px;
+  border-radius: 10px;
+  object-fit: cover;  
+  flex-shrink: 0;
+}
+
+/* 텍스트 */
+.info h3 {
+  font-size: 20px;
+  font-weight: 600;
+  margin: 4px 0;
+}
+
+.time {
+  font-size: 14px;
+  font-weight: 600;
+  color: #ff4d4d;
+}
+
+.info p {
+  font-size: 15px;
+  color: #777;
+}
+
+/* 바로가기 버튼 */
+.buttonWrapper {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.moreButton {
+  background: white;
+  color: #333;
+  border: 2px solid #ddd;
+  padding: 12px 26px;
+  font-size: 16px;
+  border-radius: 12px;
+  text-decoration: none;
+  transition: all 0.25s ease;
+}
+
+.moreButton:hover {
+  background: #e9e6e6;
+  border-color: #dbd6d7;
+  color: #000000;
+  transform: translateY(-3px);
+}

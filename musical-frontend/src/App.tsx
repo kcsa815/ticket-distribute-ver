@@ -19,7 +19,9 @@ import Navbar from './components/layout/Navbar';
 import Footer from './components/layout/Footer';
 import ProtectedRoute from './components/auth/ProtectedRoute';
 import './App.css'; 
-import MusicalSection from './components/home/MusicalSection';
+import RankingSection from './components/home/RankingSection';
+import UpcomingSection from './components/home/UpcomingSection';
+import SaleSection from './components/home/SaleSection';
 
 // ---  "임시" VenuesPage 선언만 남김] ---
 const VenuesPage = () => <div><h2>공연장 목록 페이지(준비중)</h2></div>;
@@ -34,9 +36,10 @@ function App() {
         <Routes>
           {/* --- 공용 경로 --- */}
           <Route path='/' element={<HomePage />} />
-          <Route path='/musical/:musicalId' element={<MusicalDetailPage />} />
+          <Route path="/musical/:musicalId" element={<MusicalDetailPage />} />
           <Route path='/login' element={<LoginPage />} />
           <Route path='/signup' element={<SignUpPage />} />
+          
           
           {/* --- 네비바 링크 연결 --- */}
           <Route path='/musicals' element ={<MusicalListPage />} />
@@ -46,9 +49,9 @@ function App() {
           <Route path='/region' element={<RegionPage />} /> 
           <Route path='/venues' element={<VenuesPage />} />
 
-          {/* <Route path='/rankings' element={<MusicalSection />} />
-          <Route path='/coming-soon' element={<MusicalListPage />} />
-          <Route path='/sales' element={<MusicalListPage />} /> */}
+          <Route path='/rankings' element={<RankingSection />} />
+          <Route path='/coming-soon' element={<UpcomingSection />} />
+          <Route path='/sales' element={<SaleSection />} />
             
           {/* --- 보호된 경로 (USER) --- */}
           <Route 

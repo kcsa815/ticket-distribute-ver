@@ -8,7 +8,7 @@
 import { Link } from "react-router-dom";
 import { useAuth } from "../../context/AuthContext"; //AuthContext경로 확인
 import styles from "./Header.module.css"; //헤더 스타일 가져오기
-import logoImage from '../../assets/images/logo.png'; //로고 이미지
+import logoImage from '/images/logo.png'; //로고 이미지
 //react-icons 사용
 import { FiSearch } from "react-icons/fi";
 import { BiUser } from "react-icons/bi";

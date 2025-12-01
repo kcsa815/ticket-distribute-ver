@@ -1,0 +1,109 @@
+.section {
+  width: 100%;
+  margin-top: 90px;
+}
+
+.section h2 {
+  text-align: center;
+  font-size: 30px;
+  font-weight: 700;
+  margin-bottom: 25px;
+}
+
+/* 5열 */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 25px;
+}
+
+.card {
+  background: none;
+  border: none;
+  box-shadow: none;
+  position: relative;
+  cursor: pointer;
+  transition: transform 0.25s ease;
+  text-decoration: none;
+  color: inherit;
+}
+
+/* hover 시 */
+.card:hover {
+  transform: translateY(-6px);
+}
+
+/* 포스터 */
+.poster {
+  width: 100%;
+  height: 330px;
+  border-radius: 12px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+/* 포스터 확대 효과 */
+.card:hover .poster {
+  transform: scale(1.05);
+}
+
+/* 할인 배지 */
+.discount {
+  color: #a71111;
+  font-weight: 1000;
+  padding: 3px 8px;
+  font-size: 25px;
+}
+
+.info {
+  margin-top: 12px;
+}
+
+.info h3 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+.info p {
+  font-size: 14px;
+  color: #666;
+}
+
+.price {
+  font-size: 16px;
+  font-weight: 700;
+  color: #222;
+}
+
+.priceRow {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 6px;
+}
+
+
+/* 바로가기 버튼 */
+.buttonWrapper {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.moreButton {
+  background: white;
+  color: #333;
+  border: 2px solid #ddd;
+  padding: 12px 26px;
+  font-size: 16px;
+  border-radius: 12px;
+  text-decoration: none;
+  transition: all 0.25s ease;
+}
+.moreButton:hover {
+  background: #e9e6e6;
+  border-color: #dbd6d7;
+  color: #000000;
+  transform: translateY(-3px);
+}
