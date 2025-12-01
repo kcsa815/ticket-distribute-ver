@@ -5,11 +5,11 @@ export const allMusicals = [
     title: "프랑켄슈타인",
     venue: "잠실종합운동장 내 빅탑",
     period: "2025.10.11 ~ 12.28",
-    poster: "/images/ranking1.jpg",
+    poster: "./images/ranking1.jpg",
     runningTime: 120,
     ageRating: "8세 이상",
     priceInfo: "R석 150,000원 ~",
-    descriptionImage: "/images/detail-ranking1.jpg", // 없으면 추후 같은 파일로 교체
+    descriptionImage: "./images/detail-ranking1.jpg", // 없으면 추후 같은 파일로 교체
     performances: [
       {
         id: 101,
@@ -28,11 +28,11 @@ export const allMusicals = [
     title: "데스노트",
     venue: "홍익대 대학로 아트센터",
     period: "2025.11.01 ~ 11.30",
-    poster: "/images/ranking2.jpg",
+    poster: "./images/ranking2.jpg",
     runningTime: 150,
     ageRating: "12세 이상",
     priceInfo: "90,000원 ~",
-    descriptionImage: "/images/detail-ranking2.jpg",
+    descriptionImage: "./images/detail-ranking2.jpg",
     performances: [
       {
         id: 201,
@@ -46,11 +46,11 @@ export const allMusicals = [
     title: "한복 입은 남자",
     venue: "블루스퀘어 신한카드홀",
     period: "2025.11.05 ~ 12.20",
-    poster: "/images/ranking3.jpg",
+    poster: "./images/ranking3.jpg",
     runningTime: 160,
     ageRating: "8세 이상",
     priceInfo: "100,000원 ~",
-    descriptionImage: "/images/detail-ranking3.jpg",
+    descriptionImage: "./images/detail-ranking3.jpg",
     performances: [
       {
         id: 301,
@@ -64,7 +64,7 @@ export const allMusicals = [
     title: "엘리자벳",
     venue: "LG아트센터",
     period: "2025.12.05 ~ 12.30",
-    poster: "/images/ranking4.jpg",
+    poster: "./images/ranking4.jpg",
     runningTime: 170,
     ageRating: "15세 이상",
     priceInfo: "110,000원 ~",
@@ -82,11 +82,11 @@ export const allMusicals = [
     title: "웃는남자",
     venue: "샤롯데씨어터",
     period: "2025.11.10 ~ 12.31",
-    poster: "/images/ranking5.jpg",
+    poster: "./images/ranking5.jpg",
     runningTime: 165,
     ageRating: "15세 이상",
     priceInfo: "120,000원 ~",
-    descriptionImage: "/images/detail-ranking5.jpg",
+    descriptionImage: "./images/detail-ranking5.jpg",
     performances: [
       {
         id: 501,
@@ -106,7 +106,7 @@ export const allMusicals = [
     runningTime: 165,
     ageRating: "12세 이상",
     priceInfo: "추후 오픈",
-    descriptionImage: "/images/detail-coming1.jpg",
+    descriptionImage: "./images/detail-coming1.jpg",
     performances: [
       {
         id: 601,
@@ -120,11 +120,11 @@ export const allMusicals = [
     title: "팬텀",
     venue: "예술의전당 CJ토월극장",
     period: "2025.01.20 개막",
-    poster: "/images/coming-soon2.jpg",
+    poster: "./images/coming-soon2.jpg",
     runningTime: 160,
     ageRating: "12세 이상",
     priceInfo: "추후 오픈",
-    descriptionImage: "/images/detail-coming2.jpg",
+    descriptionImage: "./images/detail-coming2.jpg",
     performances: [
       {
         id: 701,
@@ -142,7 +142,7 @@ export const allMusicals = [
     runningTime: 165,
     ageRating: "15세 이상",
     priceInfo: "추후 오픈",
-    descriptionImage: "/images/detail-coming3.jpg",
+    descriptionImage: "./images/detail-coming3.jpg",
     performances: [
       {
         id: 801,
@@ -156,11 +156,11 @@ export const allMusicals = [
     title: "마리퀴리",
     venue: "샤롯데씨어터",
     period: "곧 오픈",
-    poster: "/images/coming-soon4.jpg",
+    poster: "./images/coming-soon4.jpg",
     runningTime: 150,
     ageRating: "15세 이상",
     priceInfo: "추후 오픈",
-    descriptionImage: "/images/detail-coming4.jpg",
+    descriptionImage: "./images/detail-coming4.jpg",
     performances: [
       {
         id: 901,
@@ -174,11 +174,11 @@ export const allMusicals = [
     title: "해적",
     venue: "예술의전당",
     period: "2025.02.15 개막",
-    poster: "/images/coming-soon5.jpg",
+    poster: "./images/coming-soon5.jpg",
     runningTime: 140,
     ageRating: "12세 이상",
     priceInfo: "추후 오픈",
-    descriptionImage: "/images/detail-coming5.jpg",
+    descriptionImage: "./images/detail-coming5.jpg",
     performances: [
       {
         id: 1001,
@@ -192,7 +192,7 @@ export const allMusicals = [
     title: "물랑루즈!",
     venue: "블루스퀘어",
     period: "2025.03.01 개막",
-    poster: "/images/coming-soon6.jpg",
+    poster: "./images/coming-soon6.jpg",
     runningTime: 170,
     ageRating: "15세 이상",
     priceInfo: "추후 오픈",
@@ -212,11 +212,11 @@ export const allMusicals = [
     title: "오페라의 유령",
     venue: "청주예술의전당 대공연장",
     period: "2025.12.25 단 1회!",
-    poster: "/images/musical-list1.jpg",
+    poster: "./images/musical-list1.jpg",
     runningTime: 120,
     ageRating: "전체 관람가",
     priceInfo: "20% 할인 · 88,000원",
-    descriptionImage: "/images/detail-sale1.jpg",
+    descriptionImage: "./images/detail-sale1.jpg",
     performances: [
       {
         id: 1201,
@@ -230,11 +230,11 @@ export const allMusicals = [
     title: "시카고",
     venue: "샤롯데씨어터",
     period: "2025.11.12 ~ 12.10",
-    poster: "/images/musical-list2.jpg",
+    poster: "./images/musical-list2.jpg",
     runningTime: 160,
     ageRating: "14세 이상",
     priceInfo: "30% 할인 · 70,000원",
-    descriptionImage: "/images/detail-sale2.jpg",
+    descriptionImage: "./images/detail-sale2.jpg",
     performances: [
       {
         id: 1301,
@@ -248,11 +248,11 @@ export const allMusicals = [
     title: "엘리자벳",
     venue: "홍익대 대학로 아트센터",
     period: "2025.12.10 ~ 12.31",
-    poster: "/images/musical-list3.jpg",
+    poster: "./images/musical-list3.jpg",
     runningTime: 150,
     ageRating: "15세 이상",
     priceInfo: "10% 할인 · 90,000원",
-    descriptionImage: "/images/detail-sale3.jpg",
+    descriptionImage: "./images/detail-sale3.jpg",
     performances: [
       {
         id: 1401,
@@ -266,11 +266,11 @@ export const allMusicals = [
     title: "햄릿",
     venue: "예술의전당",
     period: "2025.12.20 ~ 12.31",
-    poster: "/images/musical-list4.jpg",
+    poster: "./images/musical-list4.jpg",
     runningTime: 175,
     ageRating: "12세 이상",
     priceInfo: "25% 할인 · 110,000원",
-    descriptionImage: "/images/detail-sale4.jpg",
+    descriptionImage: "./images/detail-sale4.jpg",
     performances: [
       {
         id: 1501,
@@ -288,7 +288,7 @@ export const allMusicals = [
     runningTime: 155,
     ageRating: "15세 이상",
     priceInfo: "15% 할인 · 85,000원",
-    descriptionImage: "/images/detail-sale5.jpg",
+    descriptionImage: "./images/detail-sale5.jpg",
     performances: [
       {
         id: 1601,
