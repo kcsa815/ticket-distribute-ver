@@ -11,6 +11,8 @@
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist"
   },
+  "homepage": "https://kcsa815.github.io/ticket-distribute-ver/",
+  
   "dependencies": {
     "@types/react-calendar": "^3.9.0",
     "@types/react-modal": "^3.16.3",
@@ -46,3 +48,5 @@
     "vite": "^7.1.7"
   }
 }
+
+  

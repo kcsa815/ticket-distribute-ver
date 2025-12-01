@@ -12,7 +12,7 @@ Modal.setAppElement('#root');   //모달이 앱의 루트 요소를 알도록 �
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
     <AuthProvider>
-      <BrowserRouter>
+      <BrowserRouter basename="/ticket-distribute-ver">
         <App />
       </BrowserRouter>
     </AuthProvider>
