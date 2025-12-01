@@ -46,13 +46,42 @@ function MusicalSection({ title, apiUrl, layoutType, viewAllLink }: Props) {
     fetchMusicals();
   }, [apiUrl, title, layoutType]);
 
-  // (handleDelete, handleEdit 함수는 동일)
-  const handleDelete = async (e: React.MouseEvent, musicalId: number) => {
-    /* ... */
-  };
-  const handleEdit = (e: React.MouseEvent, musicalId: number) => {
-    /* ... */
-  };
+/**
+ * 관리자 - 뮤지컬 삭제 핸들러 (DELETE)
+ */
+const handleDelete = async (e: React.MouseEvent, musicalId: number) => {
+    e.preventDefault(); // Link 태그의 기본 이동 방지
+
+    if (window.confirm("정말 이 뮤지컬을 삭제하시겠습니까? (연결된 회차, 좌석, 예약도 모두 삭제됩니다.)")) {
+        try {
+            // [1. API 호출] 백엔드에 삭제 요청
+            await axios.delete(`http://localhost:8080/api/musicals/${musicalId}`);
+            
+            alert("뮤지컬이 성공적으로 삭제되었습니다.");
+            
+            // [2. UI 업데이트] 삭제된 뮤지컬을 목록에서 제거하여 화면 갱신
+            setMusicals(prev => prev.filter(m => m.musicalId !== musicalId));
+            
+        } catch (err) {
+            console.error("삭제 실패:", err);
+            // Axios 에러 처리: 백엔드에서 온 구체적인 에러 메시지(예: 권한 없음) 표시
+            const errorMessage = axios.isAxiosError(err) && err.response?.data?.message
+                ? err.response.data.message
+                : "삭제에 실패했습니다. 관리자 권한이나 DB 상태를 확인하세요.";
+            alert(errorMessage);
+        }
+    }
+};
+
+/**
+ * 관리자 - 뮤지컬 수정 페이지 이동 핸들러
+ */
+const handleEdit = (e: React.MouseEvent, musicalId: number) => {
+    e.preventDefault(); // Link 태그의 기본 이동 방지
+    
+    // [3. 페이지 이동] AdminMusicalEditPage로 이동
+    navigate(`/admin/musical/edit/${musicalId}`);
+};
 
   return (
     <section className={styles.musicalSection}>
