@@ -10,9 +10,7 @@
 
 ### 배포 링크 (Live Demo)
 <ul>
-  <li>Frontend: [https://ticket-frontend-swart.vercel.app/](https://ticket-frontend-swart.vercel.app/)</li>
-  <li>Backend: [https://musical-backend.onrender.com](https://musical-backend.onrender.com)</li>
-  <li>Test ID: admin@test.com / admin123 (관리자 계정)</li>
+  <li> https://kcsa815.github.io/ticket-distribute-ver/</li>
 </ul>
 
 <br>
