@@ -83,7 +83,7 @@ function AdminPage() {
     try {
       // 3. API 호출 (로컬 주소 사용)
       const response = await axios.post(
-        'http://localhost:8080/api/musicals',
+        'https://ticket-distribute-ver.onrender.com/api/musicals',
         formData
       );
       

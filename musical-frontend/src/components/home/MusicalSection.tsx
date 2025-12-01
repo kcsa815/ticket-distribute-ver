@@ -31,7 +31,7 @@ function MusicalSection({ title, apiUrl, layoutType, viewAllLink }: Props) {
     const fetchMusicals = async () => {
       try {
         // (1) 백엔드에서 '카테고리 전체' 목록을 가져옴
-        const response = await axios.get(`http://localhost:8080${apiUrl}`);
+        const response = await axios.get(`https://ticket-distribute-ver.onrender.com${apiUrl}`);
 
         // --- 5개로 자르는 로직 명시 ---
         const sliceCount = 5;
@@ -55,7 +55,7 @@ const handleDelete = async (e: React.MouseEvent, musicalId: number) => {
     if (window.confirm("정말 이 뮤지컬을 삭제하시겠습니까? (연결된 회차, 좌석, 예약도 모두 삭제됩니다.)")) {
         try {
             // [1. API 호출] 백엔드에 삭제 요청
-            await axios.delete(`http://localhost:8080/api/musicals/${musicalId}`);
+            await axios.delete(`https://ticket-distribute-ver.onrender.com/api/musicals/${musicalId}`);
             
             alert("뮤지컬이 성공적으로 삭제되었습니다.");
             
@@ -99,7 +99,7 @@ const handleEdit = (e: React.MouseEvent, musicalId: number) => {
               <div key={musical.musicalId} className={styles.musicalCard}>
                 <Link to={`/musical/${musical.musicalId}`}>
                   <img
-                    src={`http://localhost:8080${musical.posterImageUrl}`}
+                    src={`https://ticket-distribute-ver.onrender.com${musical.posterImageUrl}`}
                     alt={musical.title}
                     className={styles.posterImage}
                   />

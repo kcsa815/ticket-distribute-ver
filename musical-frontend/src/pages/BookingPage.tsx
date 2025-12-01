@@ -89,7 +89,7 @@ function BookingPage({ isOpen, onClose, performanceId }: BookingPageProps) {
         // ...
         try {
           const response = await axios.get<PerformanceDetail>(
-            `http://localhost:8080/api/performances/${performanceId}`
+            `https://ticket-distribute-ver.onrender.com/api/performances/${performanceId}`
           );
           
           console.log("✅ 백엔드 응답 데이터:", response.data);
@@ -162,7 +162,7 @@ function BookingPage({ isOpen, onClose, performanceId }: BookingPageProps) {
       // (3) 백엔드 예매 API 호출
       // (AuthContext가 axios 기본 헤더에 토큰을 넣어주고 있음)
       const response = await axios.post(
-        'http://localhost:8080/api/bookings', 
+        'https://ticket-distribute-ver.onrender.com/api/bookings', 
         {
           performanceSeatIds: seatIdsArray // BookingReqDto 형식
         }
