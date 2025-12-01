@@ -8,10 +8,9 @@
 
 <br>
 
-### 배포 링크 (Live Demo)
-<ul>
-  <li> https://kcsa815.github.io/ticket-distribute-ver/</li>
-</ul>
+### 배포 링크
+  <p>https://kcsa815.github.io/ticket-distribute-ver/</p> 
+  <p>※정적 배포 사이트이므로 관리자, 예매기능 동작 안함</p>
 
 <br>
 
@@ -66,7 +65,7 @@
 
 #### 1. 좌석 시스템 시각화 및 UX
 <img width="600" height="auto" alt="image" src="https://github.com/user-attachments/assets/a7ef2a1d-bbcf-4f22-8338-dc04801452fb" />
-<p> 절대 좌표 렌더링: 데이터베이스의 `xCoord, yCoord` 값을 이용한 정밀한 좌석 배치</p>
+<p> 절대 좌표 렌더링: 데이터베이스의 `xCoord, yCoord` 값을 이용한 좌석 배치</p>
 <p> 모달 UX: Draggable Modal을 활용하여 사용자가 좌석 선택 중 화면을 자유롭게 이동할 수 있도록 구현</p>
 
 <br>
